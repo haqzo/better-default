@@ -12,10 +12,6 @@ So I decided to change that.
 
 No rearranging windows, no relearning menus and no unnecessary changes to how you play. Just a more consistent visual experience.
 
-<p align="center">
-  <img src="BetterDefault-showcase.gif" alt="Better Default showcase" width="850">
-</p>
-
 ---
 
 ## ✨ What's Changed?
