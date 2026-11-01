@@ -12,6 +12,40 @@ So I decided to change that.
 
 No rearranging windows, no relearning menus and no unnecessary changes to how you play. Just a more consistent visual experience.
 
+**Latest version: 1.1.0** · [Download](https://github.com/haqzo/better-default/releases/latest) · [Forum thread](https://forums.pokemmo.com/index.php?/topic/201443-pc-better-default-the-whole-ui-restyled-to-match-the-new-hud-%F0%9F%8E%83-updated-for-halloween-%F0%9F%8E%83/)
+
+---
+
+## 📸 Showcase
+
+### Login Screen
+![Login screen](screenshots/01-login.png)
+
+### Battle
+![Single battle with stat badges](screenshots/02-battle-single.png)
+![Choosing a move](screenshots/03-battle-moves.png)
+![Bag in battle](screenshots/04-battle-bag.png)
+![Double battle with the ability banner](screenshots/05-battle-double-ability.png)
+![Horde battle](screenshots/06-battle-horde.png)
+
+### PC & Egg Incubators
+![PC box](screenshots/07-pc-box.png)
+![PC multi-select](screenshots/08-pc-multiselect.png)
+![PC search matches](screenshots/09-pc-search.png)
+![Egg Incubators](screenshots/10-egg-incubators.png)
+
+### Pokémon Summary & Pokédex
+![Summary moves](screenshots/11-summary-moves.png)
+![Pokédex](screenshots/12-pokedex.png)
+
+### Trainer Card + Type Chart
+![Trainer card with type chart](screenshots/13-trainercard-typechart.png)
+
+### Overworld, Bag & Settings
+![Overworld](overworld.png)
+![Bag](Bag.png)
+![Settings](Settings.png)
+
 ---
 
 ## ✨ What's Changed?
@@ -19,13 +53,16 @@ No rearranging windows, no relearning menus and no unnecessary changes to how yo
 The goal was to make the entire interface feel like one cohesive design.
 
 - **Windows, menus & popups:** Rounded panels, thin borders and clean title dividers.
-- **Buttons, tabs & lists:** Consistent styling with subtle hover and selected states.
+- **Buttons, tabs & lists:** Consistent flat styling; hover and selected states use your Accent colour.
 - **Close buttons:** Clear red X buttons across all windows.
 - **Top HUD:** Location, time and money displayed on a glass-style panel for better readability.
-- **Battle UI:** Dark glass nameplates, rounded move buttons, flat HP/EXP bars and colour-coded effectiveness labels.
+- **Battle UI:** Dark glass nameplates with softened corners, pill-shaped HP/EXP bars, an ability banner in your Accent colour, clean stat badges (+1 Atk / -1 Def), flat Back / Confirm / Register Battle buttons and colour-coded effectiveness labels.
+- **Battle Bag:** Flat item list with the selected item in your Accent colour, centred page arrows that light up on hover and an outline-only look when you can't page further.
+- **PC & Egg Incubators:** Flat rounded slots; selection and cursor in your Accent colour, search matches in soft green.
+- **Pokémon Summary:** Cleaner tab icons with an illuminated selected state, flat dot-grid move buttons.
+- **Pokédex:** The Pokémon sprite sits in a clean rounded card.
 - **Trainer Card:** Redesigned to fit the overall theme.
-- **Pokémon Summary:** Cleaner tab icons with an illuminated selected state.
-- **Login Screen:** Solid background with a slowly rotating emblem behind the login window.
+- **Login Screen:** Solid background with a slowly rotating emblem behind the login window and a clean PokeMMO logo.
 - **Tooltips, chat bubbles & NPC dialogue:** Restyled with matching dark panels.
 - **Berry Farming:** Improved water drops, courtesy of Pancho412 (see credits).
 
@@ -33,9 +70,9 @@ The goal was to make the entire interface feel like one cohesive design.
 
 ## 🎨 Fully Customizable
 
-**Settings → Interface**
+**Settings → Interface → Theme Settings**
 
-Better Default includes extensive customization options, allowing you to create your own look without modifying theme files.
+Better Default includes extensive customization options, allowing you to create your own look without modifying theme files. New elements follow these options too – for example, the ability banner, PC selection, list highlights and battle buttons all follow your **Accent** and **Battle plates & buttons** colours.
 
 **36 colour options**, covering:
 
@@ -78,9 +115,30 @@ Selecting **Better Default + Type Chart** from the theme list adds a type chart 
 
 ## 📋 Changelog
 
+### Version 1.1.0 – The Modern Update ✨
+
+**Battle**
+- Softened corners on all battle nameplates (single, double, horde and raid).
+- HP and EXP bars are now rounded pills with a thin border – still readable at 1 HP.
+- The ability banner (e.g. "Breloom's Poison Heal") follows your Accent colour.
+- Stat badges (+1 Atk / -1 Def) keep an even border at any width; boosts are green, drops are red.
+- Back, Confirm and Register Battle buttons are flat like FIGHT / BAG, with an Accent outline on hover.
+- Battle bag: flat item list, selected item in your Accent colour, centred page arrows that light up on hover and an outline-only look when you can't page further.
+
+**Windows**
+- PC boxes & Egg Incubators: flat rounded slots instead of glows; selection and cursor in your Accent colour, search matches in soft green.
+- Pokémon Summary: flat dot-grid move buttons with a rounded end; the highlighted move follows your Accent colour.
+- Pokédex: rounded card around the Pokémon sprite.
+- Shiny encounter window: dark header (the title was hard to read).
+- Small list buttons (PC, Settings, Advanced Search…) share the new flat style.
+
+**Other**
+- Login screen: removed the line under the PokeMMO logo.
+- The mod info now links to the forum thread.
+
 ### Version 1.0.1 – Halloween Update 🎃
 
-- Updated the theme for the Halloween Event.
+- Updated the theme for the Halloween Event (theme revision 10).
 
 ### Version 1.0 – Initial Release
 
@@ -93,30 +151,17 @@ Selecting **Better Default + Type Chart** from the theme list adds a type chart 
 
 ---
 
-## 📝 Release Notes
-
-### Version 1.0.1 – Halloween Update 🎃
-
-Updated Better Default for the Halloween Event.
-
-### Version 1.0 – Initial Release
-
-The first public release of Better Default, bringing the entire PokeMMO interface together under one consistent design.
-
----
-
 ## 🛠️ In Development & Future Plans
 
-Here's a look at what I'm currently working on and some ideas I'd like to explore for future updates.
-
-### 🔨 Currently Working On
-
-- [ ] Add upcoming development tasks here.
+### ✅ Done in 1.1.0
+- [x] Cleaner Battle HUD, HP and XP bar.
+- [x] Remove the blue underline on the login screen under the PokeMMO logo.
+- [x] Cleaner Pokémon Summary.
+- [x] More modern buttons and highlight/hover states.
 
 ### 💡 Future Ideas
-
-- [ ] Add future ideas here.
-- [ ] Additional customization options.
+- [ ] Even more customization: colour options for the newest elements (PC search highlight, battle-box tint and more).
+- [ ] Mobile version! *(Will take some time – not first priority.)*
 
 *This section will be updated as development progresses. Ideas and planned features are subject to change.*
 
@@ -124,14 +169,14 @@ Here's a look at what I'm currently working on and some ideas I'd like to explor
 
 ## 📥 Download & Installation
 
-**Latest Version: 1.0.1**
+**Latest Version: 1.1.0**
 
 [Download the latest release](https://github.com/haqzo/better-default/releases/latest)
 
 ### Installation
 
-1. Download the `.mod` file.
-2. Place it inside `PokeMMO/data/mods/`. **Do not unzip it.**
+1. Download `Better-Default-1.1.0.mod`.
+2. Place it inside `PokeMMO/data/mods/`. **Do not unzip it.** Remove any older Better Default `.mod` first.
 3. Start PokeMMO and enable Better Default under Mod Management.
 4. Navigate to **Settings → Interface → Theme**.
 5. Select either Better Default or Better Default + Type Chart.
@@ -163,13 +208,9 @@ Please check out the original work and show some support!
 
 ## 💬 Feedback & Suggestions
 
-This is my first theme release, and I'm looking forward to hearing what everyone thinks!
-
-If you encounter bugs, have suggestions or think something could be improved, feel free to leave a comment.
+If you encounter bugs, have suggestions or think something could be improved, feel free to leave a comment on the forum or open an issue here.
 
 Screenshots of your custom colour combinations are also very welcome. I'd love to see what everyone comes up with!
-
-I'm always open to feedback, suggestions and requests for improvements.
 
 **Enjoy Better Default! ✨**
 
