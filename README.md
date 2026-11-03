@@ -12,42 +12,6 @@ So I decided to change that.
 
 No rearranging windows, no relearning menus and no unnecessary changes to how you play. Just a more consistent visual experience.
 
-**Latest version: 1.1.0** · [Download](https://github.com/haqzo/better-default/releases/latest) · [Forum thread](https://forums.pokemmo.com/index.php?/topic/201443-pc-better-default-the-whole-ui-restyled-to-match-the-new-hud-%F0%9F%8E%83-updated-for-halloween-%F0%9F%8E%83/)
-
----
-
-## 📸 Showcase
-
-### Login Screen
-![Login screen](screenshots/01-login.png)
-
-### Battle
-![Single battle with stat badges](screenshots/02-battle-single.png)
-![Choosing a move](screenshots/03-battle-moves.png)
-![Bag in battle](screenshots/04-battle-bag.png)
-![Double battle with the ability banner](screenshots/05-battle-double-ability.png)
-![Horde battle](screenshots/06-battle-horde.png)
-
-### PC & Egg Incubators
-![PC box](screenshots/07-pc-box.png)
-![PC multi-select](screenshots/08-pc-multiselect.png)
-![PC search matches](screenshots/09-pc-search.png)
-![Egg Incubators](screenshots/10-egg-incubators.png)
-
-### Pokémon Summary & Pokédex
-![Summary moves](screenshots/11-summary-moves.png)
-![Pokédex](screenshots/12-pokedex.png)
-
-### Trainer Card + Type Chart
-![Trainer card with type chart](screenshots/13-trainercard-typechart.png)
-
-### Overworld, Bag & Settings
-![Overworld](overworld.png)
-![Bag](Bag.png)
-![Settings](Settings.png)
-
----
-
 ## ✨ What's Changed?
 
 The goal was to make the entire interface feel like one cohesive design.
@@ -115,6 +79,121 @@ Selecting **Better Default + Type Chart** from the theme list adds a type chart 
 
 ## 📋 Changelog
 
+# Better Default 1.5.0 — changelog (everything since 1.1.0)
+
+1.5.0 follows 1.1.0 directly (the 1.1.1 test builds were never released), so this lists every change since 1.1.0.
+Compared file by file against the released `Better-Default-1.1.0.mod`.
+
+## New look
+
+### Tabs (every tab row)
+- Every horizontal tab row is one rounded dark bar. The selected tab is a raised rounded pill inside it, 3px from the bar on every side.
+- Unselected tabs use the Muted text colour. Selected and hovered tabs use the Text colour, and hover shows a faint pill.
+- Tabs are a little taller: 28px, was 24px.
+- Where: GTL, Mail, Friends, Guild, Pokédex entry, shops, Gift Shop, encounter history, statistics windows and every other tabbed window.
+- Left-hand menus (Settings, Matchmaking, PvP Statistics, chat tab settings) keep their own look.
+
+### Bag pockets
+- Each pocket is its own small tab standing on the Bag window, with a small gap between pockets.
+- The selected pocket is wider and pops up 5px above the others. Hover makes a pocket lighter.
+- Pocket icons sit centred. The Bag window, title and search box stay exactly where the game puts them.
+
+### Progress bars
+- Every bar is a rounded dark track with a faint edge and a flat rounded fill, instead of thin striped lines.
+- Where: Pokédex totals (Seen, Owned…), Pokédex base stats, Summary EXP / HP / happiness / contest stats, party and PC bars, request countdowns, matchmaking and the contest love meter.
+- A value of 0 shows an empty track, with no leftover dot.
+- The HUD event bars (wisps, raids) keep their look.
+
+### Trainer card
+- The card has its own PokeMMO wordmark: "Poke" in the Titles colour and "MMO" in the Trainer card logo colour, which is your Accent by default.
+- The wordmark is centred over the "Issued" date.
+- The Accent line dips in a smooth curve under the date, and the date sits on a soft band (new option: Trainer card date band).
+
+### Login screen
+- The PokeMMO logo sits 36px higher.
+- Soft, shiny 4-point sparkles twinkle around the emblem. Each one has its own timing, they fade in and out gently, and they stay clear of the login window, logo, announcements and side buttons.
+- New option: Login sparkles. By default it is your Accent mixed with white.
+
+### Pokémon Summary
+- The grey top bar is dark blue and has its own colour (Pokemon Summary header).
+- The value boxes on every page (overview, stats, IVs, Information, Particles) are flat rounded tiles with a faint edge, instead of bevelled boxes (Pokemon Summary boxes).
+- The whole window body follows a new option, Pokemon Summary window.
+- The Item Held bar is darker (Pokemon Summary item bar). "Item Held" and the item slot sit on matching raised tiles, and the item name is bold.
+
+### Contest screen
+- It matches battle: theme buttons with properly centred text, battle-style top and bottom bands, the opponent box in the battle panel style, and the rounded love meter (Muted text colour, with gains in Accent).
+
+### Berry water tags (Better Water Levels – Fancy by Pancho412)
+- Same Fancy shapes and positions, recoloured to the theme: dark tag with a faint edge, full drops in the new Berry water colour, empty drops dark, dry = red (HP bar – critical), and fully watered = a water-coloured tag with white drops.
+
+### Smaller touches
+- HUD notification badge (new mail etc.): now the Accent colour (option: Notification badge) instead of fixed red.
+- Matchmaking statistics: the tier tabs use the theme's buttons.
+- Pokédex: the grid outlines (caught, caught OT, alpha, shiny, costume) and the matching totals bars share one colour each, all customizable.
+- Symbol glyphs (GTL clear / refresh, arrows) follow the Text colour.
+
+## Bigger buttons and windows
+- **Login and server select:** Forget Saved Password and LOGIN.
+- **GTL:** Advanced Search and the clear / refresh buttons, with bigger symbols, lined up with the 28px dropdowns.
+- **Mod Management:** the row buttons (Delete Mod, Web Link, arrows) and the bottom bar (Get Mods, Import Mod, Open Mods Folder, Save), 3px apart.
+- **Client Management:** Open Roms Folder, Close, Select File and Info.
+- **Settings:** Cancel / Save, with 4px more room above them.
+- **Yes / No popups.**
+- **Plant Seeds:** Plant Seeds / Cancel.
+- **Matchmaking:** spectate pages, refresh and the rest.
+- **Pokédex entry:** Play Cry / Toggle Shiny.
+- **Bag:** 3 more rows of items.
+- **Pokédex:** about 2.5 more rows of Pokémon.
+- **Settings > Interface:** smaller colour pickers (the game's were 210×128 per option), so there's much less scrolling, and shorter option names so all boxes line up.
+
+## Fixes
+- **Battle HP bar at 0 HP:** it's empty now, with no red dot.
+- **Battle move buttons:** they're no longer squashed the first time you open Fight.
+- **Progress bars at 0** (e.g. contest stats): they no longer show a dot.
+
+## Themes
+- **"Better Default + Type Chart" removed:** the type chart is part of the main theme now. Point the mouse at your trainer name on the trainer card and the chart appears below the card. It covers all 17 types with Gen 2–5 rules. If you used the Type Chart theme, pick "Better Default" again.
+- **New "Better Default (no battle backdrop)":** the same theme without the dark band behind the battle buttons and messages.
+
+## Options: 56, was 36
+**20 new:**
+- Good values (green text): 31 IVs, max EVs, GTL
+- Bad values (red text)
+- Tab bar
+- Selected tab
+- Pokemon Summary window
+- Pokemon Summary header
+- Pokemon Summary boxes
+- Pokemon Summary item bar
+- Notification badge
+- Trainer card date band
+- Battle messages text
+- Login sparkles
+- Bar tracks (empty part of every bar)
+- Pokedex: caught
+- Pokedex: caught OT
+- Pokedex: alpha
+- Pokedex: shiny
+- Pokedex: costume
+- Happiness bar
+- Berry water
+
+**Renamed:**
+- "Battle menu backdrop" → "Panel backdrops" (it still colours battle dialogs, PC, mail and chat panels).
+- Shorter names: Selection highlight, Muted text, Tooltip & bubble text, Top bar backdrop, Super effective, Not very effective, No effect.
+
+**Default changes:**
+- Trainer card logo is blue (Accent) instead of gold.
+- Links are the Accent + 25% white.
+
+**Presets (all 11, in both themes):**
+- Every preset sets every new option.
+- These follow each preset's Accent: Links, trainer card logo, date band, notification badge, login sparkles.
+- Tab bar and Selected tab follow each preset's Text fields and Buttons colours.
+- Every preset was checked for readability: all text is at least 6.5:1 contrast on its background.
+
+**Updating from 1.1.0 or older:** Settings > Interface > Theme Settings > **Apply Theme Preset** loads the new colours. Your saved colours stay until you press it.
+
 ### Version 1.1.0 – The Modern Update ✨
 
 **Battle**
@@ -149,33 +228,15 @@ Selecting **Better Default + Type Chart** from the theme list adds a type chart 
 - Updated windows, menus, buttons and popups.
 - Added optional Better Default + Type Chart version.
 
----
-
-## 🛠️ In Development & Future Plans
-
-### ✅ Done in 1.1.0
-- [x] Cleaner Battle HUD, HP and XP bar.
-- [x] Remove the blue underline on the login screen under the PokeMMO logo.
-- [x] Cleaner Pokémon Summary.
-- [x] More modern buttons and highlight/hover states.
-
-### 💡 Future Ideas
-- [ ] Even more customization: colour options for the newest elements (PC search highlight, battle-box tint and more).
-- [ ] Mobile version! *(Will take some time – not first priority.)*
-
-*This section will be updated as development progresses. Ideas and planned features are subject to change.*
-
----
-
 ## 📥 Download & Installation
 
-**Latest Version: 1.1.0**
+**Latest Version: 1.5.0**
 
 [Download the latest release](https://github.com/haqzo/better-default/releases/latest)
 
 ### Installation
 
-1. Download `Better-Default-1.1.0.mod`.
+1. Download `Better-Default-1.5.mod`.
 2. Place it inside `PokeMMO/data/mods/`. **Do not unzip it.** Remove any older Better Default `.mod` first.
 3. Start PokeMMO and enable Better Default under Mod Management.
 4. Navigate to **Settings → Interface → Theme**.
