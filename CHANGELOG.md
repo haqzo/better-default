@@ -1,5 +1,43 @@
 # Better Default changelog
 
+## 1.6.0 — compatibility & polish
+
+### Game update compatibility
+- Rebuilt on the updated game default theme for the current client (theme revision 11), including the updated fonts, HUD fonts, HUD atlas, widgets and mail reward slot.
+
+### Pokémon Summary
+- The Summary window now has rounded corners and the same faint edge used by the rest of the theme.
+- The Pokémon display sits in its own rounded box with a soft rim, together with the Item Held bar.
+
+### PC Deposit Box
+- The window contents sit 10px lower, so they no longer run into the title bar.
+- Added rounded corners and a faint border.
+
+### Gift Shop
+- Buy buttons on sprite cards (Specials, Vanity Items and other categories) now match the size of the other cards.
+
+### Login
+- Added a 4px gap between the side-menu buttons (Repair Client … Exit), removing the doubled edges.
+
+### Settings
+- Settings > Other now uses narrower value columns, so every column fits inside the window.
+
+### Battle bag
+- Added a 4px gap between item rows.
+
+### GTL
+- Page buttons (<< 1 2 3 … >>) are slightly larger.
+
+### Theme versions
+- Four versions remain available: Better Default, Better Default (no backdrop), Better Default (game login), and Better Default (no backdrop, game login).
+- The two game-login versions use the game's own animated login scene and do not include the Login screen background / Login sparkles options (57 colour options rather than 59).
+
+### Customization
+- No new colour options in 1.6.0.
+- The theme retains 59 colour options in the two standard login versions and 57 in the two game-login versions, with 11 presets.
+
+# Better Default changelog
+
 ## 1.5.5 — polish (everything since 1.5.0)
 
 ### Battle
