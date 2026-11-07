@@ -1,6 +1,6 @@
-# Better Default 1.6.0
+# Better Default 1.6.5
 
-PokeMMO's default theme, cleaned up and restyled so the classic windows fit the newer HUD. Better Default has **11 presets**, an integrated **Type Chart**, and four theme variants with up to **59 colour options**.
+PokeMMO's default theme, cleaned up and restyled to match the newer HUD while keeping the familiar layout. Better Default includes **11 presets**, an integrated **Type Chart**, and **68 customization options** — 60 colour options and 8 theme settings — all in one theme.
 
 ![Better Default showcase](BetterDefault-showcase.gif)
 
@@ -13,71 +13,87 @@ Get the latest `.mod` file from the [GitHub Releases page](https://github.com/ha
 1. Close PokeMMO.
 2. Place the downloaded `.mod` file in `<PokeMMO>/data/mods/`. **Do not unzip it.**
 3. Start PokeMMO and open **Mod Management**. Enable Better Default.
-4. Go to **Settings → Interface → Theme** and choose the variant you want.
-5. Restart PokeMMO if prompted.
+4. Go to **Settings → Interface → Theme** and select **Better Default**.
+5. Open **Settings → Interface → Theme Settings** and choose your **Battle backdrop** and **Login screen** settings.
+6. Press **Apply Theme Preset** once after updating, so the new settings receive the selected preset's values.
+7. Restart PokeMMO if prompted.
 
 When updating, remove older Better Default `.mod` files from the mods folder first so you don't accidentally enable an outdated copy.
 
-## Theme variants
+## Theme settings
 
-- **Better Default** — the standard theme, with 59 colour options.
-- **Better Default (no backdrop)** — removes the battle backdrop, with 59 colour options.
-- **Better Default (game login)** — uses the original animated game login scene, with 57 colour options.
-- **Better Default (no backdrop, game login)** — combines the no-backdrop battle layout with the original game login scene, with 57 colour options.
+There is now just **one theme: Better Default**. Battle backdrop and Login screen are settings inside **Settings → Interface → Theme Settings**, rather than separate theme versions.
 
-All variants include the integrated Type Chart. Hover over your trainer name on the Trainer Card to view it; you no longer need a separate Type Chart theme.
+- **Battle backdrop:** choose **Battle band** (the dark band behind battle buttons and messages) or **No backdrop**.
+- **Login screen:** choose **Better Default backdrop**, **Better Default backdrop (no sparkles)**, or **Game login scene** (PokeMMO's own animated login scene).
 
-## What's new in 1.6.0
+The old variants — **Better Default (no backdrop)**, **Better Default (game login)**, and **Better Default (no backdrop, game login)** — have been removed. If you used one of them, select **Better Default** and configure the two dropdowns above.
 
-**Compatibility and polish.** Updated Better Default for the current PokeMMO theme revision 11, including refreshed fonts, HUD fonts, HUD atlas, widgets, and the mail reward slot.
+### Customization
 
-### Pokémon Summary
-- Rounded the window and added a faint edge.
-- Added a rounded display area for the Pokémon, with a soft rim, matching the Item Held bar.
+Better Default has **68 options in total**:
 
-### PC
-- Moved the Deposit Box contents 10px lower to clear the title bar.
-- Added rounded corners and a faint border to the Deposit Box.
+- **60 colour options** for the theme's interface colours.
+- **8 theme settings**, including the battle backdrop, login screen, encounter counter style, Bag and Pokédex heights, selection ring, selected highlight, and window/panel edges.
 
-### Other improvements
-- **Gift Shop:** Buy buttons on sprite cards now match the other cards.
-- **Login:** Added a 4px gap between side-menu buttons.
-- **Settings → Other:** Narrowed value columns so they fit the window better.
-- **Battle Bag:** Added a 4px gap between item rows.
-- **GTL:** Slightly enlarged the page buttons.
+All **11 presets** set every option, so you can start with a preset and customize from there.
 
-No new colour options or presets were added in this update.
+### Other settings
 
-## Previous update — 1.5.5
+- **Encounter counter style:** Accent line or Plain panel.
+- **Bag height:** Game / 518 / 658.
+- **Pokédex height:** Game / 390 / 530.
+- **Selection ring:** Bold / Normal / Soft / Off.
+- **Selected highlight:** Strong / Normal / Soft.
+- **Edges:** Bold / Normal / Soft / Off.
 
-### Bag
-- Bag pockets now use one top tab bar, matching the other windows.
-- The selected pocket is raised, with centered icons and no gaps showing the world behind the tabs.
-- Added separate **Bag header** and **Bag window** colour options.
+The integrated **Type Chart** is included in the theme. Hover over your trainer name on the Trainer Card to view it.
 
-### Battle
-- Effectiveness labels now use white text: **Status**, **Effective**, **Not very effective**, **Super effective**, and **No effect**.
-- The effectiveness colours have been softened, with a subtle glowing rim.
-- **Effective** is no longer greyed out.
-- Added an **Effectiveness text** colour option.
+## What's new in 1.6.5
 
-### Alignment and polish
-- Aligned the Pokédex Wild Locations season tabs.
-- Adjusted Mail checkbox spacing and the position of names and subjects.
-- Added more space between the Egg Incubators buttons.
-- Adjusted PC box-button spacing and evenly spaced Pokémon slots.
+**One theme, settings instead of versions.** Battle backdrop and Login screen are now dropdown settings in Theme Settings. The old separate theme variants have been removed.
 
-### Login themes
-The two game-login variants use PokeMMO's original animated login scene. The login background and sparkle options are not included in those variants.
+### New settings
+- Added **Encounter counter style** with Accent line and Plain panel options.
+- Added **Bag height** and **Pokédex height** options.
+- Added **Selection ring**, **Selected highlight**, and **Edges** strength settings.
+- Added the **Encounter accent** colour option.
+- Expanded customization to **68 options: 60 colours and 8 settings**. All 11 presets set every option.
 
-### Options and presets
-- **59 colour options** in the standard variants and **57** in the game-login variants.
-- **3 options** added in 1.5.5: Bag window, Bag header, and Effectiveness text.
-- All **11 presets** are set up across all four variants.
+### Look and layout
+- **Bag:** The pocket row now sits inside the Bag window, with the selected pocket shown as a raised pill and a clearer focus ring.
+- **Encounter counter:** Small and large counters now have an accent line along the top.
+- **Login announcements:** Updated to use the theme's rounded buttons, with a small gap between them.
+- **Battle stat labels:** Restored the outlined look for stat changes such as +2 Atk and −1 SpA.
+
+### Spacing and fixes
+- Added a small gap between the minus/plus buttons and values in Settings, GTL, shops, and other value rows.
+- Added a 2px gap between hovered and selected rows in dropdown lists.
+- Enlarged GTL Item Market controls and added spacing between buttons.
+- Added spacing between the sprite tile and name box in the GTL purchase confirmation.
+- Cleaned up rounded corners in the PC preview to remove ghost squares on type-tinted previews.
+
+## Previous update — 1.6.0
+
+Updated Better Default for **PokeMMO theme revision 11**, restoring compatibility with the game update and incorporating its refreshed fonts, HUD fonts, HUD atlas, widgets, and mail reward slot.
+
+- Improved Pokémon Summary styling and layout.
+- Refined PC Deposit Box positioning and window styling.
+- Fixed Gift Shop Buy button sizing.
+- Improved login menu button spacing.
+- Adjusted Settings → Other column widths.
+- Added spacing between Battle Bag item rows.
+- Enlarged GTL page buttons.
+
+## Earlier update — 1.5.5
+
+- Moved Bag pockets into one top tab bar and added separate **Bag header** and **Bag window** colour options.
+- Updated battle effectiveness labels with white text, softer colours, and a new **Effectiveness text** option.
+- Polished spacing and alignment in the Pokédex, Mail, Egg Incubators, and PC.
 
 ## Earlier major update — 1.5.0
 
-Version 1.5.0 introduced 20 new colour options (36 → 56), redesigned tab bars and progress bars, a restyled Trainer Card and Pokémon Summary, login sparkles, a themed Contest screen, and the integrated Type Chart. It also introduced the no-battle-backdrop variant.
+Version 1.5.0 introduced 20 new colour options (36 → 56), redesigned tab bars and progress bars, a restyled Trainer Card and Pokémon Summary, login sparkles, a themed Contest screen, and the integrated Type Chart.
 
 ## Credits
 
