@@ -1,14 +1,23 @@
-# Better Default 1.7.0
+# Better Default 1.7.5
 
 PokeMMO's default theme, cleaned up and restyled to match the newer HUD while keeping the familiar layout. Better Default includes **13 presets**, an integrated **Type Chart**, and **73 customization options** — 61 colour options and 12 additional settings — all in one theme.
 
-![Better Default showcase](BetterDefault-showcase.gif)
+**New in 1.7.5: Better Default for phones and tablets (Mobile Beta)** — a separate download, see [Mobile Beta](#mobile-beta) below.
+
+![Better Default – Pokémon Summary with the new type tags](screenshots/1.7.0/summary-moves-type-tags.png)
 
 ## Download
 
-Get the latest `.mod` file from the [GitHub Releases page](https://github.com/haqzo/better-default/releases/latest).
+Get the latest `.mod` files from the [GitHub Releases page](https://github.com/haqzo/better-default/releases/latest):
 
-## Install / update
+| File | For |
+|---|---|
+| `Better-Default-1.7.5.mod` | **PC** |
+| `Better-Default-1.7.5-Mobile-Beta.mod` | **Phones and tablets — BETA** |
+
+Enable only **one** Better Default `.mod` at a time.
+
+## Install / update (PC)
 
 1. Close PokeMMO.
 2. Place the downloaded `.mod` file in `<PokeMMO>/data/mods/`. **Do not unzip it.**
@@ -57,6 +66,51 @@ All **13 presets** set the theme options, so you can start with a preset and cus
 
 Existing presets have also been refined. PokeMMO Gold now uses the game's own gold, Amethyst is deeper purple, Emerald is greener, Sakura is softer pink, Ember is more orange, Crimson is deeper red, and OLED Black now uses true black windows.
 
+## Mobile Beta
+
+Better Default now has a version for **phones and tablets**. It is still a **beta**, so it comes as its own file: `Better-Default-1.7.5-Mobile-Beta.mod`.
+
+It uses the game's own phone layout (big touch buttons, full-screen windows), drawn in the Better Default style with the same colours and the same 13 presets as on PC.
+
+![Mobile Beta – battle move buttons and effectiveness labels](screenshots/1.7.5-mobile/08-battle-moves.jpg)
+
+### Install (phone / tablet)
+
+1. Download `Better-Default-1.7.5-Mobile-Beta.mod` to your phone. **Do not unzip it.**
+2. In PokeMMO open **Mod Management → Import Mod** and pick the file. Remove or disable other Better Default mods.
+3. Enable **Better Default**.
+4. Go to **Settings → Interface → Theme**, select **Better Default (Mobile Beta)** and restart.
+5. Press **Apply Theme Preset** once.
+
+### What's drawn for the phone
+
+- **Full-screen windows** also fill the strip under the game area, so there's no black band at the bottom of the screen.
+- **Rounder corners** made for touch, and the new HUD's **line icons** on the phone buttons.
+- **Pokémon Summary:** tab buttons with icons (the open page is a bright tile with an Accent border, the others are faint), dark patterned move cards with an Accent stripe, and a small gap between the value boxes.
+- **Battle:** move buttons as big type tags (type colour, soft gradient, type symbol); sharp effectiveness labels (Super effective, Effective, Not very effective, Immune, Status) that fit inside their pill; round battle buttons with the HUD's icons; an item description panel in the battle Bag.
+- Smoothly scaled type and move tags, rounded checkboxes, the chat window in the Chat background colour, more padding on Gift Shop cards, and the Fancy berry water drops like on PC.
+
+![Mobile Beta – Pokémon Summary moves](screenshots/1.7.5-mobile/06-summary-moves.jpg)
+
+### Mobile settings
+
+**67 options: 57 colours + 10 settings**, and all 13 presets. Only settings that change something on a phone are listed; the PC-only ones (Bag height, Pokédex height, Battle backdrop, Encounter counter style and its colours, Type chart, Summary item bar) are left out. Window border and Window border width are called *(popups)* on phones, because they only show on popups and NPC dialogue there.
+
+Phone-only settings:
+
+- **Summary tabs: open page border:** Tab border accent / Tab border soft / Tab border off.
+- **Summary tabs: other pages:** Other tabs faint / Other tabs solid / Other tabs icons only.
+- **Battle move buttons:** Moves bright / Moves deeper / Moves dark.
+
+### Known beta limits
+
+- Tested on Android. iPhone / iPad have not been tested yet.
+- The movement pad, the battle item bar and some popups are placed by the game; a theme can't move them.
+- Type and move tags can only be smoothed, not made sharper: the game draws them at their own pixel size on phones.
+- After switching themes you may see "Could not load theme Better Default because it is not a mobile theme" once — pick **Better Default (Mobile Beta)** in Settings → Interface → Theme and restart.
+
+Feedback and phone screenshots are very welcome.
+
 ## Better Items
 
 **Better Items**, my separate item-icon mod, works great alongside Better Default. The two mods complement each other visually, but they also work independently — you can use Better Items with other themes too.
@@ -64,7 +118,12 @@ Existing presets have also been refined. PokeMMO Gold now uses the game's own go
 - [Better Items on GitHub](https://github.com/haqzo/better-items-)
 - [Better Items forum thread](https://forums.pokemmo.com/index.php?/topic/201627/)
 
-## What's new in 1.7.0
+## What's new in 1.7.5
+
+- **New: Better Default Mobile (Beta)** for phones and tablets, as a separate download (see [Mobile Beta](#mobile-beta)).
+- **PC:** no changes — the PC theme is the same as in 1.7.0.
+
+## 1.7.0
 
 ### Redesigned Type & Move Tags
 

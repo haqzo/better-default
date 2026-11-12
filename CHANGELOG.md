@@ -1,42 +1,121 @@
 # Better Default changelog
 
-## 1.6.0 — compatibility & polish
+## 1.7.5 — Mobile Beta
 
-### Game update compatibility
-- Rebuilt on the updated game default theme for the current client (theme revision 11), including the updated fonts, HUD fonts, HUD atlas, widgets and mail reward slot.
+### New: Better Default for phones and tablets (beta)
+- A separate download, **`Better-Default-1.7.5-Mobile-Beta.mod`**, with the theme **Better Default (Mobile Beta)**.
+- It is the game's own phone layout (big touch buttons, full-screen windows) in the Better Default design, with the same colours and the **same 13 presets** as on PC.
+- Drawn for the phone in the same style:
+  - **Full-screen windows** also fill the strip under the game area, so there is no black band at the bottom of the screen.
+  - **Rounder corners** made for touch, and the new HUD's **line icons** for the phone buttons (close, settings, menu, chat, arrows…).
+  - **Pokémon Summary:** tab buttons with icons — the open page is a bright tile with an Accent border, the other pages are faint. The move cards are dark with a subtle pattern and an Accent stripe; the selected move gets an Accent border. A small gap between the value boxes.
+  - **Battle:** the move buttons are big type tags (type colour, soft gradient, type symbol). The effectiveness labels (**Super effective, Effective, Not very effective, Immune, Status**) are redrawn sharp in English, Spanish, French and Chinese and fit inside their pill. Round battle buttons with the HUD's icons. The battle Bag shows the item description on a panel.
+  - Type and move tags are scaled smoothly on phones (the phone theme has its own copy of the sprite atlas).
+  - Rounded checkboxes, the chat window in the **Chat background** colour, more padding on Gift Shop cards, and the **Fancy berry water drops** like on PC.
+- **67 Theme Settings on phones (57 colours + 10 settings).** Only settings that change something on a phone are listed. Left out (PC-only): Bag height, Pokédex height, Battle backdrop, Encounter counter style and its three colours, Type chart, Pokémon Summary item bar. Window border and Window border width are called *(popups)* there, because they only show on popups and NPC dialogue.
+- **Phone-only settings:** *Summary tabs: open page border* (Tab border accent / soft / off), *Summary tabs: other pages* (Other tabs faint / solid / icons only) and *Battle move buttons* (Moves bright / deeper / dark).
+- Tested on Android. iPhone / iPad have not been tested yet.
 
-### Pokémon Summary
-- The Summary window now has rounded corners and the same faint edge used by the rest of the theme.
-- The Pokémon display sits in its own rounded box with a soft rim, together with the Item Held bar.
+### Known beta limits
+- The movement pad, the battle item bar and some popups are placed by the game; a theme can't move them.
+- Type and move tags can only be smoothed, not made sharper: the game draws them at their own pixel size on phones (tested).
+- In the left battle column the type tag sits close to the button edge.
+- After switching from another theme the game may show *"Could not load theme Better Default because it is not a mobile theme"* once — pick **Better Default (Mobile Beta)** in Settings → Interface → Theme and restart.
 
-### PC Deposit Box
-- The window contents sit 10px lower, so they no longer run into the title bar.
-- Added rounded corners and a faint border.
+### PC
+- No changes: the PC theme is the same as in 1.7.0 (only the version number and the README changed). If you already use 1.7.0 on PC, updating is optional.
 
-### Gift Shop
-- Buy buttons on sprite cards (Specials, Vanity Items and other categories) now match the size of the other cards.
+### Under the hood
+- The mobile `.mod` has two theme entries: **Better Default** (PC, `themes/better-default/`, byte-identical to 1.7.0) and **Better Default (Mobile Beta)** (`themes/better-default-mobile/`, built on the game's `data/themes/android` layout files).
+- The phone entry uses its own sprite atlas, `custom-atlas/mobile.atlas` (the PC `main.png` page + a `mobile-types.png` page with the type / move / damage-class tags on smooth filtering). The PC entry still uses `custom-atlas/main.atlas`, unchanged.
+- Effectiveness label sheets `res/effectivity_buttons_{en,es,fr,zh}.png` and `res/bdm-eff-kit.png` are drawn at 3× and shown at the game's size.
+- Theme revision 11 (game update of 6 Nov 2026).
 
-### Login
-- Added a 4px gap between the side-menu buttons (Repair Client … Exit), removing the doubled edges.
+## 1.7.0 — type tags, window borders & new presets
 
-### Settings
-- Settings > Other now uses narrower value columns, so every column fits inside the window.
+### New type, move and damage-class tags
+- Every type tag, move tag and damage-class tag (Physical / Special / Status) is redrawn, **in all seven languages the game has tag pictures for** (English, German, Spanish, French, Italian, Korean, Chinese).
+- Title case in the theme's bold condensed font with a dark edge, the official type colours with a soft gradient, and a modern type symbol (flame, drop, leaf, bolt, snowflake, dragon scales…).
+- **Pokémon Summary › Moves:** the move tag is as tall as the move box and sits right beside it; move names are centred in the box.
 
-### Battle bag
-- Added a 4px gap between item rows.
+### New settings (Theme Settings)
+- **Type chart:** *Show when hovering your name* or *Type chart off*.
+- **Bag pockets:** how the selected pocket in the Bag's top row looks — *Pill*, *Underline*, *Underline, faint buttons*, *Underline only*, *Pill + underline*, *Accent ring* or *Accent ring + underline*. The underline sits under the pocket.
+- **Window border:** *No window border*, *Faint*, *Medium* or *Strong*. The border is part of each window's own shape, so it follows every window exactly — also the type chart and the NPC dialogue box.
+- **Window border width:** *Thin* or *Thick*.
+- New colour **Window border colour** (every preset starts with its Accent).
+- **73 options in total:** 61 colours + 12 settings. All 13 presets set every one of them.
 
-### GTL
-- Page buttons (<< 1 2 3 … >>) are slightly larger.
+### Presets
+- **Two new presets:** **Catppuccin Mocha** and **Tokyo Night**, in the official colours of those popular themes. Catppuccin Mocha uses mauve as the Accent; Tokyo Night uses its green, with cyan links and a magenta trainer card logo and login sparkles.
+- **Colours tuned so each preset matches its name:** PokeMMO Gold uses the game's own gold, Amethyst is a deeper purple, Emerald green (was mint), Sakura a softer pink, Ember more orange, Crimson a deeper red, and **OLED Black has true black windows**.
+- Press **Apply Theme Preset** to load the new values.
 
-### Theme versions
-- Four versions remain available: Better Default, Better Default (no backdrop), Better Default (game login), and Better Default (no backdrop, game login).
-- The two game-login versions use the game's own animated login scene and do not include the Login screen background / Login sparkles options (57 colour options rather than 59).
+### Icons
+- The small interface icons (settings gear, trash, lock, pin, sort, sound, select all, edit, close, help, rotate) are redrawn as clean flat icons.
+- The little pixel pictures (BP, coins, clock, seasons, shiny stars, alpha, hordes, map, dice, status icons…) get the cleaner Better Items look.
+- Icons and tags only change while Better Default is the selected theme.
 
-### Customization
-- No new colour options in 1.6.0.
-- The theme retains 59 colour options in the two standard login versions and 57 in the two game-login versions, with 11 presets.
+### Look and fixes
+- **Login screen:** the PokeMMO logo uses the same bold condensed font as the tags, with a thin dark edge so it stays readable over the bright login scene.
+- **Bag:** the pocket row is taller, so the pocket icons sit centred in their buttons.
+- **Pokémon Summary:** 4px wider, so the bigger shiny star, alpha and hidden ability badges fit. The Item Held tile is centred on the item and has the same height as the Item Held bar.
+- **GTL:** item icons in the tables sit on the same tile as the Bag slots (with the faint cell edge), so dark icons no longer fade into the row.
+- **Poké Mart:** item names stop before the icon instead of running under it (a very long name shrinks a little and ends in "…").
 
-# Better Default changelog
+### Under the hood
+- Own sprite atlas: `custom-atlas/main.atlas` + `main.png` (1024×1024), chosen with `sprite_atlas` on the theme entry in `info.xml`, so the tags and icons only apply to Better Default. It is a full copy of the game's `sprites/atlas/main.atlas` — refresh it if a game update changes that atlas. Move tags (`skill_type_*`) are 50×36 regions.
+- New image `res/bd-170-border.png` (window border rings). New settings in `info.xml`: Type chart, Bag pockets (IMAGE), Window border, Window border width (CONSTANT, values in `options.xml`).
+- Copies of game themes (refresh them if a game update changes them), in `main-widgets.xml`: `broker-table` (GTL icon cell), `market-button` (Poké Mart rows), `label-monster-area` (Summary move labels).
+- Theme revision 11 (game update of 6 Nov 2026).
+
+## 1.6.5 — one theme, settings instead of versions
+
+### No more theme versions: Battle backdrop and Login screen are now settings
+- **Battle backdrop** and **Login screen** are now part of the default theme. They are dropdowns in **Settings › Interface › Theme Settings**, so there is only **one theme: "Better Default"**.
+- The versions **"Better Default (no backdrop)"**, **"Better Default (game login)"** and **"Better Default (no backdrop, game login)"** are **gone**. If you used one of them, pick **"Better Default"** again and set the two dropdowns:
+  - **Battle backdrop:** *Battle band* (the dark band behind the battle buttons and messages) or *No backdrop*.
+  - **Login screen:** *Better Default backdrop*, *Better Default backdrop (no sparkles)* or *Game login scene* (the game's own animated login scene; avoids the one-frame flash when you enter the game, like the old "game login" versions).
+- Press **Apply Theme Preset** once after updating, so every new setting gets its value.
+
+### New settings (Theme Settings)
+- **Encounter counter style:** *Accent line* (new) or *Plain panel*.
+- **Bag height:** 378 (game) / 518 / 658. **Pokédex height:** 250 (game) / 390 / 530.
+- **Selection ring:** bold / normal / soft / off — the ring on the selected tab, bag pocket and tile.
+- **Selected highlight:** strong / normal / soft — the fill on selected rows, tabs and tiles.
+- **Edges:** bold / normal / soft / off — the faint outline on windows, panels, tabs, buttons and boxes.
+- New colour option **Encounter accent** (every preset sets it to its Accent).
+- **68 options in total:** 60 colours + 8 settings. All 11 presets set every one of them.
+
+### Look
+- **Bag:** one window. The pocket row now sits inside the bag window; the selected pocket is a raised pill with a clearer focus ring.
+- **Encounter counter** (small and big): an accent line along the top, so it matches the rest of the HUD.
+- **Login announcements** (bottom left): the theme's rounded buttons with a small gap between them.
+- **Battle stat labels** (+2 Atk / −1 SpA): back to the outlined look from before the game update.
+
+### Spacing and fixes
+- **− value +** rows (Settings, GTL, shops…): a small gap between the buttons and the value.
+- **Dropdown lists:** a 2px gap between the hovered row and the selected row.
+- **GTL Item Market:** bigger − / + / Buy / Cancel buttons with gaps between them, and a bigger refresh button.
+- **GTL purchase confirm** ("Are you sure you wish to purchase that listing?"): a gap between the sprite tile and the name box.
+- **PC preview:** the rounded corners are cut out cleanly (no more ghost squares on type-tinted previews).
+
+### Under the hood
+- One theme folder (`themes/better-default/`); `no-backdrop.xml`, `default-login.xml` and the three version folders are removed.
+- New `options.xml` (values for the new settings, loaded first). Battle backdrop, Login screen and Encounter style are IMAGE settings, Bag / Pokédex height INT, Selection ring / Selected highlight / Edges CONSTANT (they set the strength of the ring, highlight and edge images).
+- Copies of game themes (refresh them if a game update changes them): in `main-widgets.xml` `label-settings-vai` (Settings value rows) and the previous `stat-boost` / `stat-drop`; changed in `main-widgets.xml` `logingui`, `changelog-frame`, `battle-frame` / `battle-panel`; changed in `init.xml` `confirm-panel` › `container` (gaps), `gtl-buy-panel`, `valueadjuster`.
+- Theme revision 11 (game update of 6 Nov 2026).
+
+## 1.6.0 — new game default + polish
+
+- **Fixed after the game update:** The theme is rebuilt on the game's new default theme (new fonts, HUD fonts, HUD atlas and widgets, mail reward slot), so it **loads again** with the current client.
+- **Login:** The side menu buttons (Repair Client … Exit) have a 4px gap, no more doubled edges.
+- **Settings:** Settings > Other: narrower value columns so every column fits in the window.
+- **Gift Shop:** Buy buttons on the sprite cards (Specials, Vanity Items …) are the same size as the other cards.
+- **Pokémon Summary:** Rounded window with the theme's faint edge, like every other window. The Pokémon display is its own rounded box with a soft rim, sitting in one panel with the Item bar.
+- **PC Deposit Box:** The window content sits 10px lower, so it no longer runs into the title bar; rounded corners and a faint border.
+- **Battle bag:** 4px gap between the item rows.
+- **GTL:** Slightly bigger page buttons (<< 1 2 3 … >>).
 
 ## 1.5.5 — polish (everything since 1.5.0)
 
