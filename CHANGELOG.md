@@ -1,5 +1,35 @@
 # Better Default changelog
 
+## 1.8.0 — new icons, Gift Shop labels, cursors, new settings (+ Mobile Beta update)
+
+### PC and phones
+- **Status icons** (frozen, paralysis, burn, poison, sleep, badly poisoned) are small tags in the 1.7.0 type-tag style: colour tile, soft gradient, dark edge and a white symbol with a dark outline. Small and large size.
+- **Gender, season and time-of-day icons** (♀ / ♂, spring / summer / autumn / winter, morning / day / night) are cleaner, with soft shading. Same shapes and sizes as the game's.
+- **Gift Shop:** the hanging NEW / LIMITED / ON SALE / SEASONAL ribbons are now labels in the type-tag style, in all 8 Gift Shop languages (English, German, Spanish, French, Italian, Portuguese, Japanese, Chinese), with the game's own wording.
+- **New setting – Trainer card header:** *Header band* (the top of the card, behind your name and the logo, in the Trainer card date band colour) or *Plain card* (as before). Header band is on in all 13 presets.
+- **New setting – Stat bars** (Pokédex › Base Stats): *Stat colours* (as before), *Soft colours* (the same colours, calmer) or *Accent bars* (every bar in your Accent colour; Total stays white).
+- **Better Default preset:** new defaults — **No backdrop** in battle and **"Underline, faint buttons"** bag pockets (on PC also **Bag height 658** and **Pokédex height 530**). Already using Better Default? Pick the Better Default preset and press **Apply Theme Preset** to get them.
+
+### PC
+- **Better Default cursors** (arrow, hand, text, help and the resize cursors), inspired by Bibata Modern Ice: rounded, white with a blue border and a soft shadow. The help cursor's "?" is in the Better Default blue. (The cursor colour is fixed; cursors can't follow the Accent setting.)
+- **Type chart:** new choice **Always show** — the chart stays open under your trainer card while the card is open (besides *Show when hovering your name* and *Type chart off*).
+- **75 options:** 61 colours + 14 settings.
+
+### Mobile Beta
+- **One file for Android and iPhone / iPad:** `Better-Default-1.8.0-Mobile-Beta.zip`. The `.zip` *is* the mod — import it as it is, don't unzip it (on iPhone, don't tap it in Files). An iPhone couldn't import the 1.7.5 `.mod` ("Error importing mod").
+- The phone file now has **only the phone theme**, so phones no longer show *"Could not load theme Better Default because it is not a mobile theme"*.
+- **Battle backdrop** (*Battle band* / *No backdrop*) is now a phone setting too: *No backdrop* removes the dark panel behind the battle messages.
+- New on phones as well: Trainer card header, Stat bars, the new icons and the Gift Shop labels.
+- **70 options:** 57 colours + 13 settings. Still a beta: tested on Android; iPhone / iPad not confirmed yet.
+
+### Under the hood
+- Status / gender / season / clock sprites are redrawn in place in `custom-atlas/main.png` (same regions, same sizes; `main.atlas` unchanged). The phone atlas uses the same page.
+- Gift Shop: `res/gameshop_<lang>.png` ×8 redrawn (same size and areas) — PC and phone.
+- Own `cursors.xml` + `res/bd-cursors.png` (128 × 64) instead of the game's cursors (PC).
+- New `bd-176.xml` (Stat bars images, loaded after `typechart.xml` on PC and phone), `res/bd-card-header.png` (trainer card header band).
+- The phone file has one theme entry, **Better Default (Mobile Beta)**; the `themes/better-default/` folder stays inside, because the phone theme loads its shared files from there.
+- Theme revision 11.
+
 ## 1.7.5 — Mobile Beta
 
 ### New: Better Default for phones and tablets (beta)

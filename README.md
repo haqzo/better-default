@@ -1,10 +1,10 @@
-# Better Default 1.7.5
+# Better Default 1.8.0
 
-PokeMMO's default theme, cleaned up and restyled to match the newer HUD while keeping the familiar layout. Better Default includes **13 presets**, an integrated **Type Chart**, and **73 customization options** — 61 colour options and 12 additional settings — all in one theme.
+PokeMMO's default theme, cleaned up and restyled to match the newer HUD while keeping the familiar layout. Better Default includes **13 presets**, an integrated **Type Chart**, and **75 customization options** — 61 colour options and 14 additional settings — all in one theme. There is also a **Mobile Beta** for phones and tablets (Android and iPhone / iPad).
 
-**New in 1.7.5: Better Default for phones and tablets (Mobile Beta)** — a separate download, see [Mobile Beta](#mobile-beta) below.
+**New in 1.8.0:** status icons as tags, cleaner gender / season / time icons, new Gift Shop labels, Better Default cursors, two new settings (Trainer card header, Stat bars), "Always show" for the Type Chart, and one Mobile Beta file for Android and iPhone. See [What's new in 1.8.0](#whats-new-in-180).
 
-![Better Default – Pokémon Summary with the new type tags](screenshots/1.7.0/summary-moves-type-tags.png)
+![Better Default – trainer card with the header band and the Type Chart](screenshots/1.8.0/pc-1-trainer-card-header-typechart.png)
 
 ## Download
 
@@ -12,10 +12,10 @@ Get the latest `.mod` files from the [GitHub Releases page](https://github.com/h
 
 | File | For |
 |---|---|
-| `Better-Default-1.7.5.mod` | **PC** |
-| `Better-Default-1.7.5-Mobile-Beta.mod` | **Phones and tablets — BETA** |
+| `Better-Default-1.8.0.mod` | **PC** |
+| `Better-Default-1.8.0-Mobile-Beta.zip` | **Phones and tablets, Android and iPhone / iPad — BETA**. The `.zip` is the mod itself: import it as it is, don't unzip it. |
 
-Enable only **one** Better Default `.mod` at a time.
+Enable only **one** Better Default mod at a time.
 
 ## Install / update (PC)
 
@@ -35,16 +35,18 @@ There is just **one theme: Better Default**. Its appearance is controlled throug
 
 - **Battle backdrop:** choose **Battle band** (the dark band behind battle buttons and messages) or **No backdrop**.
 - **Login screen:** choose **Better Default backdrop**, **Better Default backdrop (no sparkles)**, or **Game login scene** (PokeMMO's own animated login scene).
-- **Type Chart:** show the integrated Type Chart when hovering over your Trainer Card name, or turn it off.
+- **Type Chart:** show the integrated Type Chart when hovering over your Trainer Card name, **always show** it under the card, or turn it off.
 - **Bag pocket style:** choose from seven selection styles — Pill, Underline, Underline with faint buttons, Underline only, Pill + underline, Accent ring, or Accent ring + underline.
 - **Window borders:** choose No border, Faint, Medium, or Strong, with Thin or Thick width and a customizable border colour.
+- **Trainer card header:** Header band (the top of the card in the date band colour) or Plain card.
+- **Stat bars:** the Pokédex Base Stats bars in their stat colours, in soft colours, or all in your Accent colour.
 
 ### Customization
 
-Better Default has **73 options in total**:
+Better Default has **75 options in total**:
 
 - **61 colour options** for the theme's interface colours.
-- **12 additional settings** for elements such as the battle backdrop, login screen, Type Chart, Bag pocket style, window borders, encounter counter, Bag and Pokédex heights, selection ring, selected highlight, and window/panel edges.
+- **14 additional settings** for elements such as the battle backdrop, login screen, Type Chart, Bag pocket style, window borders, trainer card header, stat bars, encounter counter, Bag and Pokédex heights, selection ring, selected highlight, and window/panel edges.
 
 All **13 presets** set the theme options, so you can start with a preset and customize from there.
 
@@ -68,16 +70,16 @@ Existing presets have also been refined. PokeMMO Gold now uses the game's own go
 
 ## Mobile Beta
 
-Better Default now has a version for **phones and tablets**. It is still a **beta**, so it comes as its own file: `Better-Default-1.7.5-Mobile-Beta.mod`.
+Better Default has a version for **phones and tablets**. It is still a **beta**, so it comes as its own file: `Better-Default-1.8.0-Mobile-Beta.zip` (one file for Android and iPhone / iPad).
 
 It uses the game's own phone layout (big touch buttons, full-screen windows), drawn in the Better Default style with the same colours and the same 13 presets as on PC.
 
-![Mobile Beta – battle move buttons and effectiveness labels](screenshots/1.7.5-mobile/08-battle-moves.jpg)
+![Mobile Beta – battle move buttons and effectiveness labels](screenshots/1.7.5-mobile/10-battle-moves.jpg)
 
 ### Install (phone / tablet)
 
-1. Download `Better-Default-1.7.5-Mobile-Beta.mod` to your phone. **Do not unzip it.**
-2. In PokeMMO open **Mod Management → Import Mod** and pick the file. Remove or disable other Better Default mods.
+1. Download `Better-Default-1.8.0-Mobile-Beta.zip` to your phone. **Do not unzip it** (on iPhone, don't tap it in the Files app — Files would unpack it). It's about 4 MB; a much smaller file means the download went wrong.
+2. In PokeMMO open **Mod Management → Import Mod** and pick the `.zip`. Remove or disable other Better Default mods.
 3. Enable **Better Default**.
 4. Go to **Settings → Interface → Theme**, select **Better Default (Mobile Beta)** and restart.
 5. Press **Apply Theme Preset** once.
@@ -90,11 +92,11 @@ It uses the game's own phone layout (big touch buttons, full-screen windows), dr
 - **Battle:** move buttons as big type tags (type colour, soft gradient, type symbol); sharp effectiveness labels (Super effective, Effective, Not very effective, Immune, Status) that fit inside their pill; round battle buttons with the HUD's icons; an item description panel in the battle Bag.
 - Smoothly scaled type and move tags, rounded checkboxes, the chat window in the Chat background colour, more padding on Gift Shop cards, and the Fancy berry water drops like on PC.
 
-![Mobile Beta – Pokémon Summary moves](screenshots/1.7.5-mobile/06-summary-moves.jpg)
+![Mobile Beta – Pokémon Summary moves](screenshots/1.7.5-mobile/04-summary-moves.jpg)
 
 ### Mobile settings
 
-**67 options: 57 colours + 10 settings**, and all 13 presets. Only settings that change something on a phone are listed; the PC-only ones (Bag height, Pokédex height, Battle backdrop, Encounter counter style and its colours, Type chart, Summary item bar) are left out. Window border and Window border width are called *(popups)* on phones, because they only show on popups and NPC dialogue there.
+**70 options: 57 colours + 13 settings**, and all 13 presets. Only settings that change something on a phone are listed; the PC-only ones (Bag height, Pokédex height, Encounter counter style and its colours, Type chart, Summary item bar) are left out. Battle backdrop, Trainer card header and Stat bars work on phones too. Window border and Window border width are called *(popups)* on phones, because they only show on popups and NPC dialogue there.
 
 Phone-only settings:
 
@@ -104,10 +106,9 @@ Phone-only settings:
 
 ### Known beta limits
 
-- Tested on Android. iPhone / iPad have not been tested yet.
+- Tested on Android. iPhone / iPad: one file for both since 1.8.0, but not confirmed on an iPhone yet — feedback welcome.
 - The movement pad, the battle item bar and some popups are placed by the game; a theme can't move them.
 - Type and move tags can only be smoothed, not made sharper: the game draws them at their own pixel size on phones.
-- After switching themes you may see "Could not load theme Better Default because it is not a mobile theme" once — pick **Better Default (Mobile Beta)** in Settings → Interface → Theme and restart.
 
 Feedback and phone screenshots are very welcome.
 
@@ -118,9 +119,28 @@ Feedback and phone screenshots are very welcome.
 - [Better Items on GitHub](https://github.com/haqzo/better-items-)
 - [Better Items forum thread](https://forums.pokemmo.com/index.php?/topic/201627/)
 
-## What's new in 1.7.5
+## What's new in 1.8.0
 
-- **New: Better Default Mobile (Beta)** for phones and tablets, as a separate download (see [Mobile Beta](#mobile-beta)).
+![Status icons in battle: sleep and badly poisoned](screenshots/1.8.0/pc-4-status-icons-battle.png)
+
+- **Status icons** (frozen, paralysis, burn, poison, sleep, badly poisoned) are small tags in the type-tag style.
+- **Gender, season and time-of-day icons** are cleaner, with soft shading — same shapes and sizes.
+- **Gift Shop:** NEW / LIMITED / ON SALE / SEASONAL are type-tag style labels instead of hanging ribbons, in all 8 Gift Shop languages.
+- **Better Default cursors** on PC, inspired by Bibata Modern Ice: rounded, white with a blue border and a soft shadow.
+- **New settings:** Trainer card header (Header band / Plain card) and Stat bars (Stat colours / Soft colours / Accent bars), on PC and phones.
+- **Type Chart:** new choice *Always show* (PC).
+- **Better Default preset:** No backdrop and "Underline, faint buttons" pockets by default (PC also Bag 658 / Pokédex 530). Press **Apply Theme Preset** to get them.
+- **Mobile Beta:** one `.zip` for Android and iPhone / iPad, only the phone theme inside (no more "not a mobile theme" message), and Battle backdrop is a phone setting too.
+
+![Pokédex Base Stats with Soft colours](screenshots/1.8.0/pc-2-base-stats-soft.png)
+
+![Better Default cursors](screenshots/1.8.0/pc-6-cursors.png)
+
+Full details: [CHANGELOG.md](CHANGELOG.md).
+
+## 1.7.5
+
+- **New: Better Default Mobile (Beta)** for phones and tablets, as a separate download.
 - **PC:** no changes — the PC theme is the same as in 1.7.0.
 
 ## 1.7.0
@@ -159,10 +179,10 @@ Feedback and phone screenshots are very welcome.
 
 ### 1.6.5
 
-- Moved Bag pockets into one top tab bar and added separate **Bag header** and **Bag window** colour options.
-- Updated battle effectiveness labels with white text, softer colours, and a new **Effectiveness text** option.
-- Polished spacing and alignment in the Pokédex, Mail, Egg Incubators, and PC.
-- Added Encounter counter style, Bag height, Pokédex height, Selection ring, Selected highlight, and Edges settings.
+- **One theme instead of separate versions:** Battle backdrop and Login screen are now dropdowns in Theme Settings, so "(no backdrop)", "(game login)" and "(no backdrop, game login)" are gone.
+- Added Encounter counter style, Bag height, Pokédex height, Selection ring, Selected highlight and Edges settings, plus a new **Encounter accent** colour.
+- One-window Bag, an accent line on the encounter counter, rounded login announcement buttons and outlined battle stat labels.
+- Spacing fixes for − value + rows, dropdown lists, the GTL Item Market and purchase confirm, and the PC preview corners.
 - Expanded customization to 68 options: 60 colours and 8 settings.
 
 ### 1.6.0
