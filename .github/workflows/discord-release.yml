@@ -1,0 +1,56 @@
+name: Discord Release Announcement
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord announcement
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import json
+          import urllib.request
+
+          with open(os.environ["GITHUB_EVENT_PATH"]) as f:
+              event = json.load(f)
+
+          release = event.get("release", {})
+          test = os.environ["GITHUB_EVENT_NAME"] == "workflow_dispatch"
+
+          payload = {
+              "username": "Better Default",
+              "allowed_mentions": {"parse": []},
+              "embeds": [{
+                  "title": "Connection Test" if test else release.get("name") or release["tag_name"],
+                  "description": "GitHub is successfully connected!" if test else (release.get("body") or "A new release is available.")[:3900],
+                  "url": "https://github.com/haqzo/better-default/releases" if test else release["html_url"],
+                  "color": 5793266,
+                  "footer": {
+                      "text": "PokeMMO Companion • Better Default"
+                  }
+              }]
+          }
+
+          request = urllib.request.Request(
+              os.environ["DISCORD_WEBHOOK_URL"],
+              data=json.dumps(payload).encode(),
+              headers={
+                  "Content-Type": "application/json",
+                  "User-Agent": "GitHub-Actions"
+              },
+              method="POST"
+          )
+
+          with urllib.request.urlopen(request, timeout=30) as response:
+              print("Discord response:", response.status)
+          PY
